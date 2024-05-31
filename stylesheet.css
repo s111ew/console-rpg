@@ -1,0 +1,40 @@
+body {
+    background-image: url("./images/background-image.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.headerDiv {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.header {
+    width: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.button {
+    transition: transform 0.3s ease;
+    width: 250px;
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.button:hover {
+        transform: translateY(-15px);
+}
+
