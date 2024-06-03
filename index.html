@@ -43,11 +43,10 @@
     </div>
     <script>
       const onButtonClick = () => {
-        if (document.getElementById("textBox").className === "hide") {
-          document.getElementById("textBox").className = "show";
-        } else {
-          document.getElementById("textBox").className = "hide";
-        }
+        document.getElementById("textBox").className =
+          document.getElementById("textBox").className === "hide"
+            ? "show"
+            : "hide";
       };
     </script>
   </body>
