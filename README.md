@@ -13,10 +13,7 @@ Skills I aim to develop through working on this project:
 
 To-Do List:
 
-// Add HTML boilerplate
-// Add skeleton HTML elements
-// Generate cover image
-// Style CSS elements
-// Add script tag in HTML for hover animations
-// Add script tag in HTML for "console commands" box appearing
-// JS.....
+// Write storyboard for ACT 1
+// Receive player input for Name & Gender
+// Generate base stats
+// ...
