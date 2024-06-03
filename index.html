@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="stylesheet.css" />
     <title>Console RPG</title>
   </head>
@@ -21,6 +21,7 @@
         id="terminal"
         src="./images/stone tablet(1) copy.png"
         alt="a coding symbol written on a stone tablet"
+        onclick="onButtonClick()"
       />
       <a href="https://github.com/s111ew/console-rpg" target="_blank">
         <img
@@ -31,5 +32,23 @@
         />
       </a>
     </div>
+    <div class="textBoxContainer">
+      <div id="textBox" class="hide">
+        This game is played entirely in the JS console built into your web
+        browser. To open the console, right click on the page and click
+        “Inspect”. Navigate to “Console” in the toolbar that opens and begin
+        playing! Follow the prompts that appear and type your response, pressing
+        the “Enter” key to submit each time.
+      </div>
+    </div>
+    <script>
+      const onButtonClick = () => {
+        if (document.getElementById("textBox").className === "hide") {
+          document.getElementById("textBox").className = "show";
+        } else {
+          document.getElementById("textBox").className = "hide";
+        }
+      };
+    </script>
   </body>
 </html>
